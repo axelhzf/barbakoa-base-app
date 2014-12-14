@@ -1,0 +1,10 @@
+{
+  "name": "barbakoa-base-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "barbakoa": "^0.0.1"
+  },
+  "scripts": {
+    "dev": "NODE_CONFIG_DIR=./node_modules/barbakoa/app/server/config node --harmony app/server/server.js"
+  }
+}
