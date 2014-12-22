@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Barbakoa
+  h2 Total #{visits.length}
+  each visit in visits
+    div #{visit.agent}

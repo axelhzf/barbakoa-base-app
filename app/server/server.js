@@ -6,11 +6,11 @@ var app = new barbakoa();
 
 var Visits = require("./models/Visits");
 
-router.get("/hello", function* () {
+router.get("/", function* () {
   var agent = this.req.headers['user-agent'] || '';
   yield Visits.create({agent: agent});
-  var total = yield Visits.count();
-  this.body = {total: total};
+  var visits = yield Visits.findAll();
+  yield this.render("index", {visits: visits});
 });
 
 
