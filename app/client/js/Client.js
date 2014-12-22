@@ -4,6 +4,6 @@ class Client {
   }
 
   sayHello () {
-    console.log(this.msg);
+    console.log(this.msg + "abc");
   }
 }
