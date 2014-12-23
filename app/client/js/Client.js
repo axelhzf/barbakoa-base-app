@@ -7,3 +7,6 @@ class Client {
     console.log(this.msg + "abc");
   }
 }
+
+var client = new Client("msg asdf ");
+client.sayHello();

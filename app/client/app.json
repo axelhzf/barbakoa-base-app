@@ -1,0 +1,12 @@
+{
+  "style": "style/app.less",
+  "components": [
+    "underscore",
+    "jquery",
+    "angular"
+  ],
+  "js": [
+    "*.js"
+  ]
+}
+

@@ -10,8 +10,10 @@ router.get("/", function* () {
   var agent = this.req.headers['user-agent'] || '';
   yield Visits.create({agent: agent});
   var visits = yield Visits.findAll();
-  yield this.render("index", {visits: visits});
-});
 
+  var assets = barbakoa.assets.getModule("app");
+
+  yield this.render("index", {visits: visits, assets: assets});
+});
 
 app.start();
