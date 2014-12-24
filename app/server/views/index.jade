@@ -7,9 +7,10 @@ block content
   h1 Barbakoa
   h2 Total #{visits.length}
 
-  each visit in visits
-    div #{visit.agent}
+  div(ng-app="app")
+    ng-view
 
   if assets.js
     each script in assets.js
       script(src="assets/" + script)
+    script(src="assets/templates/templates.js")
