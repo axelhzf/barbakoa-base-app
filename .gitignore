@@ -2,3 +2,5 @@ node_modules
 *.iml
 app/.assets
 app/client/components
+coverage
+logs
