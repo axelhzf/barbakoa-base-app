@@ -1,6 +1,7 @@
 node_modules
 *.iml
 app/.assets
+app/.server
 app/client/components
 coverage
 logs
